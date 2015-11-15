@@ -1,1 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import 'coursemology.org/variables';
 @import 'application';
+
+@mixin box-shadow($v-shadow, $blur, $spread) {
+  -webkit-box-shadow: 0 $v-shadow $blur $spread $gray-light;
+  -moz-box-shadow: 0 $v-shadow $blur $spread $gray-light;
+  box-shadow: 0 $v-shadow $blur $spread $gray-light;
+}
+
+.navbar-inverse {
+
+  border-bottom: 1px solid $gray-lighter;
+  border-top: 4px solid $cyan;
+  @include box-shadow(0, 8px, -3px);
+
+  .navbar-brand {
+    color: $gray-darker;
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+    border-right: 1px solid $gray-lighter;
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  .navbar-nav > li > a {
+    font-family: 'Varela Round', sans-serif;
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  .navbar-toggle {
+    border-color: transparent;
+    &:hover,  &:focus{
+      background-color: transparent;
+    }
+    .icon-bar {
+      background-color: $cyan;
+    }
+  }
+}

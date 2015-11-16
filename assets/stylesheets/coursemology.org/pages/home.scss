@@ -1,0 +1,61 @@
+div.high-voltage-pages.home {
+  .intro-header {
+
+    background: url(asset-path('coursemology.org/pages/home/jumbotron.png')) no-repeat center center;
+    background-size: cover;
+    color: $white;
+    font-family: 'Varela Round', sans-serif;
+    height: 500px;
+    margin: -($grid-gutter-width / 2);
+
+    .header-text {
+      padding-top: 100px;
+    }
+
+    .btn-branding {
+      background-color: $midnight;
+      border-radius: 50px;
+      padding-left: ($grid-gutter-width / 3 * 2);
+      padding-right: ($grid-gutter-width / 3 * 2);
+      margin-top: ($grid-gutter-width / 2);
+      a {
+        color: $white;
+        font-size: 1.1em;
+        text-decoration: none;
+        &:hover,  &:focus{
+          color: $cyan;
+        }
+      }
+    }
+  }
+
+  .explanation-section {
+
+    margin-top: ($grid-gutter-width * 2);
+
+    div.col-md-4 {
+      padding: ($grid-gutter-width * 2);
+
+      .icon1 {
+        background: url(asset-path('coursemology.org/pages/home/icon_engaging.png')) no-repeat;
+        height: 50px;
+      }
+
+      .icon2 {
+        background: url(asset-path('coursemology.org/pages/home/icon_general.png')) no-repeat;
+        height: 50px;
+      }
+
+      .icon3 {
+        background: url(asset-path('coursemology.org/pages/home/icon_simple.png')) no-repeat;
+        height: 50px;
+      }
+    }
+
+    h3 {
+      color: $midnight;
+      font-family: 'Varela Round', sans-serif;
+    }
+  }
+
+}

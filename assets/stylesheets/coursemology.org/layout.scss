@@ -33,7 +33,7 @@
 
   .navbar-toggle {
     border-color: transparent;
-    &:hover,  &:focus{
+    &:hover, &:focus, &:active {
       background-color: transparent;
     }
     .icon-bar {

@@ -70,13 +70,13 @@ html
             nav.pull-right
               ul.nav.nav-pills
                 li.footer-link
-                  = link_to('Terms of Service', new_user_registration_path)
+                  = link_to('Terms of Service', page_path('terms_of_service'))
                 li.footer-link
-                  = link_to('About Us', new_user_session_path)
+                  = link_to('About Us', page_path('about'))
                 li.footer-link
-                  = link_to('Privacy Policy', new_user_registration_path)
+                  = link_to('Privacy Policy', page_path('privacy_policy'))
                 li.footer-link
-                  = link_to('Contact Us', new_user_registration_path)
+                  = link_to('Contact Us', page_path('contact_us'))
                 li.footer-link
-                  = link_to('GitHub', new_user_session_path)
+                  a href='https://github.com/Coursemology' target='_blank' GitHub
             p © 2013 - 2015 Coursemology.org. All Rights Reserved.

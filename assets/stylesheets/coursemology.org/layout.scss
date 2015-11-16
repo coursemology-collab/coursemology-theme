@@ -14,10 +14,10 @@
   border-top: 4px solid $cyan;
 
   .navbar-brand {
-    color: $gray-darker;
-    font-weight: 400;
-    font-family: 'Varela Round', sans-serif;
     border-right: 1px solid $gray-lighter;
+    color: $gray-darker;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
 
     &:hover {
       color: $cyan;

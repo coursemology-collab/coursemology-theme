@@ -100,3 +100,24 @@
     font-family: 'Varela Round', sans-serif;
   }
 }
+
+footer {
+  border-top: 1px solid $gray-lighter;
+  color: $gray-light;
+
+  p {
+    padding-top: ($grid-gutter-width / 2);
+  }
+
+  .nav-pills {
+    .footer-link {
+      a {
+        color: $gray-light;
+      }
+      a:hover {
+        color: $cyan;
+        background: transparent;
+      }
+    }
+  }
+}

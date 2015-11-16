@@ -62,3 +62,21 @@ html
       = flash_messages
       div class=page_class
         = yield
+
+    footer
+      div.container-fluid
+        div.row
+          div.col-lg-12
+            nav.pull-right
+              ul.nav.nav-pills
+                li.footer-link
+                  = link_to('Terms of Service', new_user_registration_path)
+                li.footer-link
+                  = link_to('About Us', new_user_session_path)
+                li.footer-link
+                  = link_to('Privacy Policy', new_user_registration_path)
+                li.footer-link
+                  = link_to('Contact Us', new_user_registration_path)
+                li.footer-link
+                  = link_to('GitHub', new_user_session_path)
+            p © 2013 - 2015 Coursemology.org. All Rights Reserved.

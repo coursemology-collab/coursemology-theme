@@ -9,16 +9,16 @@
 }
 
 .navbar-inverse {
-
+  @include box-shadow(0, 8px, -3px);
   border-bottom: 1px solid $gray-lighter;
   border-top: 4px solid $cyan;
-  @include box-shadow(0, 8px, -3px);
 
   .navbar-brand {
     color: $gray-darker;
     font-weight: 400;
     font-family: 'Varela Round', sans-serif;
     border-right: 1px solid $gray-lighter;
+
     &:hover {
       color: $cyan;
     }
@@ -26,6 +26,7 @@
 
   .navbar-nav > li > a {
     font-family: 'Varela Round', sans-serif;
+
     &:hover {
       color: $cyan;
     }
@@ -33,9 +34,13 @@
 
   .navbar-toggle {
     border-color: transparent;
-    &:hover, &:focus, &:active {
+
+    &:hover,
+    &:focus,
+    &:active {
       background-color: transparent;
     }
+
     .icon-bar {
       background-color: $cyan;
     }
@@ -55,9 +60,10 @@ footer {
       a {
         color: $gray-light;
       }
+
       a:hover {
-        color: $cyan;
         background: transparent;
+        color: $cyan;
       }
     }
   }

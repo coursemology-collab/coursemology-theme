@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import 'coursemology.org/variables';
 @import 'application';
 
@@ -44,7 +44,7 @@
 
 .intro-header {
 
-  background: url(pages/home/jumbotron.png) no-repeat center center;
+  background: url(asset-path('coursemology.org/pages/home/jumbotron.png')) no-repeat center center;
   background-size: cover;
   color: $white;
   font-family: 'Varela Round', sans-serif;
@@ -80,17 +80,17 @@
     padding: ($grid-gutter-width * 2);
 
     .icon1 {
-      background: url(pages/home/icon_engaging.png) no-repeat;
+      background: url(asset-path('coursemology.org/pages/home/icon_engaging.png')) no-repeat;
       height: 50px;
     }
 
     .icon2 {
-      background: url(pages/home/icon_general.png) no-repeat;
+      background: url(asset-path('coursemology.org/pages/home/icon_general.png')) no-repeat;
       height: 50px;
     }
 
     .icon3 {
-      background: url(pages/home/icon_simple.png) no-repeat;
+      background: url(asset-path('coursemology.org/pages/home/icon_simple.png')) no-repeat;
       height: 50px;
     }
   }

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import 'coursemology.org/variables';
 @import 'application';
+@import 'pygments-css/github';
 
 @mixin box-shadow($v-shadow, $blur, $spread) {
   -webkit-box-shadow: 0 $v-shadow $blur $spread $gray-light;

@@ -4,8 +4,6 @@
 @import 'pygments-css/github';
 
 @mixin box-shadow($v-shadow, $blur, $spread) {
-  -webkit-box-shadow: 0 $v-shadow $blur $spread $gray-light;
-  -moz-box-shadow: 0 $v-shadow $blur $spread $gray-light;
   box-shadow: 0 $v-shadow $blur $spread $gray-light;
 }
 

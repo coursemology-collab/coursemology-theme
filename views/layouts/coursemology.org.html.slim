@@ -22,7 +22,7 @@ html
             span.icon-bar
             span.icon-bar
           - if sidebar?
-            button.navbar-toggle type="button" data-toggle="sidebar" data-target=".sidebar" aria-expanded="false" aria-controls="navbar"
+            button.navbar-toggle type="button" data-toggle="collapse" data-target=".sidebar" aria-expanded="false" aria-controls="navbar"
               span.sr-only
                 = t('layout.navbar.toggle_sidebar')
               span.icon-bar
@@ -38,7 +38,7 @@ html
                 a.dropdown-toggle data-toggle="dropdown"
                   => t('layout.navbar.courses')
                   span.caret
-                ul.dropdown-menu.pull-right
+                ul.dropdown-menu.dropdown-menu-right
                   - my_courses.each do |course|
                     li = link_to(format_inline_text(course.title), course_path(course))
                   li.divider role='separator'
@@ -52,7 +52,7 @@ html
                 a.dropdown-toggle data-toggle="dropdown"
                   => current_user.name
                   span.caret
-                ul.dropdown-menu
+                ul.dropdown-menu.dropdown-menu-right
                   li
                     = link_to(t('user.admin.navbar.account_settings'), edit_user_registration_path)
                   - if can?(:manage, :all)

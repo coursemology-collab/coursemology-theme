@@ -12,6 +12,10 @@ html
     = header_tags
 
   body
+    #fb-root[data-turbolinks-permanent]
+    / The code below does not come from FB
+    javascript:
+      typeof FB !== "undefined" && FB !== null ? FB.XFBML.parse() : void 0;
     nav.navbar.navbar-inverse.navbar-fixed-top role="navigation"
       div.container-fluid
         div.navbar-header
@@ -30,6 +34,13 @@ html
               span.icon-bar
           a.navbar-brand href=root_path
             = t('layout.coursemology')
+          div.fb-like[data-href="https://www.facebook.com/coursemology"
+                      data-width="20"
+                      data-layout="button_count"
+                      data-action="like"
+                      data-size="small"
+                      data-show-faces="false"
+                      data-share="false"]
         div.collapse.navbar-collapse#site-navigation-navbar
           ul.nav.navbar-nav.pull-right
             li

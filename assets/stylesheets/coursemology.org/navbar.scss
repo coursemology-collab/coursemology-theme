@@ -1,0 +1,38 @@
+.navbar-inverse {
+  @include box-shadow(0, 8px, -3px);
+  border-bottom: 1px solid $gray-lighter;
+  border-top: 4px solid $cyan;
+
+  .navbar-brand {
+    border-right: 1px solid $gray-lighter;
+    color: $gray-darker;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  .navbar-nav > li > a {
+    font-family: 'Varela Round', sans-serif;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+
+  .navbar-toggle {
+    border-color: transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+    }
+
+    .icon-bar {
+      background-color: $cyan;
+    }
+  }
+}

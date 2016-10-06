@@ -1,25 +1,41 @@
+// scss-lint:disable SelectorDepth
+@mixin navbar-header-text {
+  font-family: 'Varela Round', sans-serif;
+
+  &:hover {
+    color: $cyan;
+  }
+}
+
 .navbar-inverse {
   @include box-shadow(0, 8px, -3px);
   border-bottom: 1px solid $gray-lighter;
   border-top: 4px solid $cyan;
 
+  .nav {
+    max-width: 100%;
+  }
+
   .navbar-brand {
+    @include navbar-header-text;
     border-right: 1px solid $gray-lighter;
     color: $gray-darker;
-    font-family: 'Varela Round', sans-serif;
     font-weight: 400;
+  }
 
-    &:hover {
-      color: $cyan;
+  .navbar-collapse {
+    max-width: 100%;
+
+    a {
+      @media (max-width: $screen-xs-max) {
+        text-align: right;
+        white-space: normal;
+      }
     }
   }
 
   .navbar-nav > li > a {
-    font-family: 'Varela Round', sans-serif;
-
-    &:hover {
-      color: $cyan;
-    }
+    @include navbar-header-text;
   }
 
   .navbar-toggle {
@@ -31,8 +47,10 @@
       background-color: transparent;
     }
 
-    .icon-bar {
+    > .icon-bar {
       background-color: $cyan;
     }
   }
 }
+
+

@@ -7,15 +7,47 @@
   box-shadow: 0 $v-shadow $blur $spread $gray-light;
 }
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.footer-buffer {
+
+  @media screen and (max-width: 937px) {
+    padding-bottom: 120px;
+  }
+
+  @media screen and (max-width: 553px) {
+    padding-bottom: 150px;
+  }
+
+  @media screen and (min-width: 937px) {
+    padding-bottom: 70px;
+  }
+}
+
 footer {
   border-top: 1px solid $gray-lighter;
+  bottom: 0;
   color: $gray-light;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
 
   p {
     padding-top: ($grid-gutter-width / 2);
   }
 
+  .footer-copyright {
+    min-width: 405px;
+    padding: 10px 15px;
+  }
+
   .nav-pills {
+
     .footer-link {
       a {
         color: $gray-light;
@@ -25,6 +57,26 @@ footer {
         background: transparent;
         color: $cyan;
       }
+    }
+  }
+
+  @media screen and (max-width: 937px) {
+    height: 100px;
+  }
+
+  @media screen and (max-width: 553px) {
+    height: 130px;
+  }
+
+  @media screen and (min-width: 937px) {
+    height: 50px;
+
+    .footer-links {
+      float: right;
+    }
+
+    .nav-pills {
+      float: right;
     }
   }
 }

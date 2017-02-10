@@ -96,8 +96,8 @@ html
     footer
       div.container-fluid
         div.row
-          div.col-md-7.col-lg-7.footer-links
-            nav
+          div.col-lg-12
+            nav.pull-right
               ul.nav.nav-pills
                 li.footer-link
                   = link_to('Terms of Service', page_path('terms_of_service'))
@@ -109,5 +109,4 @@ html
                   = link_to('Contact Us', page_path('contact_us'))
                 li.footer-link
                   a href='https://github.com/Coursemology' target='_blank' GitHub
-          div.col-md-5.col-lg-5
-            p.footer-copyright © 2013 - #{Time.zone.now.year} Coursemology.org. All Rights Reserved.
+            p © 2013 - #{Time.zone.now.year} Coursemology.org. All Rights Reserved.

@@ -87,7 +87,7 @@ html
               li
                 = link_to(t('layout.navbar.sign_in'), new_user_session_path)
 
-    div.container-fluid
+    div.container-fluid.footer-buffer
       = global_announcements
       = flash_messages
       div class=page_class
@@ -96,8 +96,8 @@ html
     footer
       div.container-fluid
         div.row
-          div.col-lg-12
-            nav.pull-right
+          div.col-md-7.col-lg-7.footer-links
+            nav
               ul.nav.nav-pills
                 li.footer-link
                   = link_to('Terms of Service', page_path('terms_of_service'))
@@ -109,4 +109,5 @@ html
                   = link_to('Contact Us', page_path('contact_us'))
                 li.footer-link
                   a href='https://github.com/Coursemology' target='_blank' GitHub
-            p © 2013 - #{Time.zone.now.year} Coursemology.org. All Rights Reserved.
+          div.col-md-5.col-lg-5
+            p.footer-copyright © 2013 - #{Time.zone.now.year} Coursemology.org. All Rights Reserved.

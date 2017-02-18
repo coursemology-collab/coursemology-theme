@@ -19,10 +19,6 @@
     }
   }
 
-  .about-wrapper {
-    border-radius: 20px;
-  }
-
   .about-us {
     float: none;
     margin: 0 auto;
@@ -100,5 +96,10 @@
   .about-link {
     color: initial;
     text-decoration: underline;
+  }
+
+  .github-button {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

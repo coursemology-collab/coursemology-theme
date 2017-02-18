@@ -4,63 +4,62 @@
       h1 "Learning should be easy and fun."
       p We are working hard to realise this dream.
 .row
-  .col-md-8.col-md-offset-2.about-wrapper
-    #story.row
-      .about-us
+  .col-md-8.col-md-offset-2.about-us
+    .row
+      #story.col-md-8.col-md-offset-2
         h2 Our Story
-        .row
-          .col-md-8.col-md-offset-2
-            p
-              | Coursemology is a gamified learning platform, built by teachers, for teachers. Based in Singapore, Coursemology is built to allow teachers do what they do best -
-              em Teach
-              br
-              br
-              u Our Vision
-              | : To make Technology Easy for Educators, Increase Student Engagement and Make Learning Fun!
-
-    #instructors.row
-      .col-md-12.about-us
-        h2 Instructors
-        .row
-          .col-md-8.col-md-offset-2
-            p
-              | Coursemology provides powerful features to enhance teaching productivity and effectiveness. Developed with actual users, Coursemology is used and loved by both teachers and students.
+        p
+          | Coursemology is a gamified learning platform, built by teachers, for teachers. 
+          | Based in Singapore, Coursemology is built to allow teachers do what they do best -
+          em Teach
+          br
+          br
+          u Our Vision
+          | : To make Technology Easy for Educators, Increase Student Engagement and Make Learning Fun!
 
     .row
-      .col-md-10.col-md-offset-1
+      #instructors.col-md-8.col-md-offset-2
+        h2 Instructors
+        p
+          | Coursemology provides powerful features to enhance teaching productivity and effectiveness. 
+          | Developed with actual users, Coursemology is used and loved by both teachers and students.
+
+    br
+    .row
+      .col-lg-10.col-lg-offset-1
         .row
           .col-md-4.features
             = image_tag 'coursemology.org/pages/about/feature-analytics.png', class: 'about-img'
             h4 Teaching analytics at all levels
+            br
           .col-md-4.features
             = image_tag 'coursemology.org/pages/about/feature-ui.png', class: 'about-img'
             h4 Intuitive user interface
+            br
           .col-md-4.features
             = image_tag 'coursemology.org/pages/about/feature-gamify.png', class: 'about-img'
             h4 Gamify the learning experience
-    br
+            br
 
     .row
       .about-us.col-md-8.col-md-offset-2
         p
           | To get started, sign up as an instructor to teach a course on Coursemology!
 
-    #contribution.row
-      .about-us
+    .row
+      #contribution.col-md-8.col-md-offset-2
         h2 Contributions
-        .row
-          .col-md-8.col-md-offset-2
-            p
-              | We always strive to make Coursemology better - with your help! Do send us suggestions on features or bug reports using
-              a.about-link href="https://github.com/Coursemology/coursemology2/issues?state=open" target="_blank"  Github Issues
-            p
-              | Coursemology is currently supported by teaching grants from the National University of Singapore.  Developers interested in contributing are welcome - please get started at
-              a.about-link href="https://github.com/Coursemology/coursemology2" target="_blank"  Github
-            p
-              iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=Coursemology&repo=coursemology.org&type=watch&count=true" width="110"
-              iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=Coursemology&repo=coursemology.org&type=fork&count=true" width="95"
-            br
-            br
-            p.about-license
-              | Coursemology.org's source code is released under the
-              a.about-link href="http://opensource.org/licenses/MIT" target="_blank"  MIT License
+        p
+          | We always strive to make Coursemology better - with your help! Do send us suggestions on features or bug reports using 
+          a.about-link href="https://github.com/Coursemology/coursemology2/issues?state=open" target="_blank" Github Issues
+        p
+          | Coursemology is currently supported by teaching grants from the National University of Singapore.  Developers interested in contributing are welcome - please get started at 
+          a.about-link href="https://github.com/Coursemology/coursemology2" target="_blank" Github
+        br
+        p
+          iframe.github-button allowtransparency="true" frameborder="0" height="30" scrolling="0" src="https://ghbtns.com/github-btn.html?user=Coursemology&repo=coursemology2&type=star&count=true&size=large" width="125"
+          iframe.github-button allowtransparency="true" frameborder="0" height="30" scrolling="0" src="https://ghbtns.com/github-btn.html?user=Coursemology&repo=coursemology2&type=fork&count=true&size=large" width="125"
+        br
+        p.about-license
+          | Coursemology.org's source code is released under the 
+          a.about-link href="http://opensource.org/licenses/MIT" target="_blank" MIT License

@@ -26,6 +26,13 @@ html {
   }
 }
 
+.navbar {
+  .courses-menu {
+    max-height: 70vh;
+    overflow-y: scroll;
+  }
+}
+
 footer {
   border-top: 1px solid $gray-lighter;
   bottom: 0;

@@ -2,6 +2,10 @@
 @import 'application';
 @import 'pygments-css/github';
 
+body {
+  padding-top: $navbar-height + $navbar-margin-bottom;
+}
+
 @mixin box-shadow($v-shadow, $blur, $spread) {
   box-shadow: 0 $v-shadow $blur $spread $gray-light;
 }
